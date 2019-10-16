@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/nature"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="150dp"
+                android:id="@+id/person_profile_profiPic"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:id="@+id/person_profile_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="user Name"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/person_profile_profiPic"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/person_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hey!! hello am using SociMedia "
+                android:layout_below="@id/person_profile_userName"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/profile_send_message_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Send Message"
+                android:background="@drawable/button"
+                android:layout_below="@+id/person_profile_status"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/profile_decline_message_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Decline Request"
+        android:background="@drawable/button"
+        android:layout_below="@id/profile_send_message_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+
+
+
+</RelativeLayout>
